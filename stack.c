@@ -7,7 +7,8 @@
 //#define MAX 10
 void push(Stack* stack, stackType data) {
    // Node* newNode = malloc(sizeof(Node));
-    if(stack->top == _MAX) {
+    if(stack->top == _MAX-1)  //updated
+	{
         printf("Stack overflow while push()");
         return;
     }
